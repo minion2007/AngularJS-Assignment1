@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<title>Filter-Uppercase</title>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myController">
+		<p>{{country1| uppercase}} is the largest country in the world</p>
+		<p>{{country2| uppercase}} is the largest country in the world</p>
+		<p>{{country3| uppercase}} is the largest country in the world</p>
+	</div>
+<script>
+	var app=angular.module("myApp",[]);
+	app.controller('myController', function($scope){
+	
+	$scope.country1 = "russia",
+	$scope.country2 = "canada",
+	$scope.country3 = "usa"
+});
+</script>
+</body>
+</html>
